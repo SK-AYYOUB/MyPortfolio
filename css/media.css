@@ -3,6 +3,18 @@
         display: none;
     }
 }
+@media (max-width: 949px) {
+    .home-img {
+        display: none;
+        width: 100%;
+        display: none;
+    }
+}
+@media (max-width: 409px) {
+    span#long {
+        font-size: large;
+    }
+}
 @media (min-width: 790px) {
     .navbar .items {
         display: none;

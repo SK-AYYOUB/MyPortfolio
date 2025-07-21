@@ -3,13 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    border-spacing: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border-spacing: 0;
 }
 
 body {
-    background-color: white;
+    background-color: #1f242d;
 }
 
 a {
@@ -112,6 +112,7 @@ a {
     animation: show-content 1.5s linear forwards 1s;
     -webkit-animation: show-content 1.5s linear forwards 1s;
     border-bottom: 2px solid #7cf03d;
+    overflow: hidden;
 }
 /* the animation is written before at line 35 ! */
 .home-info h1 {
@@ -187,10 +188,6 @@ a {
     width: 40vw;
     height: 40vw;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -263,7 +260,7 @@ a {
 .bars-animation .bar {
     width: 100%;
     height: 100%;
-    background-color: #1f242d;
+    background-color: white;
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -274,13 +271,13 @@ a {
 }
 
 @keyframes show-bars {
-    100% {
+    90% {
         transform: translateY(0%);
         -webkit-transform: translateY(0%);
         -moz-transform: translateY(0%);
         -ms-transform: translateY(0%);
         -o-transform: translateY(0%);
-}
+    }
 }
 /* the end of bars animation styling */
 
@@ -292,6 +289,8 @@ a {
 
 /* contact styling */
 .contact {
+    position: relative;
+    top: -20px;
     border-top: 2px solid #7cf03d;
     visibility: hidden;
     opacity: 0;
@@ -299,6 +298,7 @@ a {
     -webkit-animation: show-content 1.5s linear forwards 1s;
     color: white;
     background-color: #1f242d;
+    overflow: hidden;
 }
 .contact .btn-sci {
     display: inline-flex;
@@ -309,6 +309,11 @@ a {
 
 .contact .btn-sci .sci {
     margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact .btn-sci .sci a {
